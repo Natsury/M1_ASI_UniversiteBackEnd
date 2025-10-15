@@ -8,9 +8,13 @@ public class Etudiant
     public string Prenom { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
 
+    //Man to One
+    public Parcours? ParcoursSuivi { get; set; } = null;
 
     public override string ToString()
     {
-        return $"{Id} : {NumEtud} - {Nom} {Prenom} inscrit en" /*+ParcoursSuivi*/;
+        return $"{Id} : {NumEtud} - {Nom} {Prenom} inscrit en" + ParcoursSuivi;
     }
+    
+    
 }
