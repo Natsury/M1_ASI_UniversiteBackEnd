@@ -1,8 +1,8 @@
 using UniversiteDomain.DataAdapters.DataAdaptersFactory;
 using UniversiteDomain.Entities;
-using UniversiteDomain.Exceptions.ParcourExceptions;
+using UniversiteDomain.Exceptions.ParcoursExceptions;
 
-namespace UniversiteDomain.UseCases.ParcourUseCases.Create;
+namespace UniversiteDomain.UseCases.ParcoursUseCases.Create;
 
 public class CreateParcoursUseCase(IRepositoryFactory repositoryFactory)
 {
