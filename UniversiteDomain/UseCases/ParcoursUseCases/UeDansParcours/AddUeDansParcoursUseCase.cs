@@ -62,7 +62,7 @@ public class AddUeDansParcoursUseCase(IRepositoryFactory repositoryFactory)
             // Des ues sont déjà enregistrées dans le parcours
             // On recherche si l'ue qu'on veut ajouter n'existe pas déjà
             List<Ue> inscrites = parcours[0].UesEnseignees;    
-            var trouve=inscrites.FindAll(e=>e.Id.Equals(idUe));
+            var trouve= inscrites.FindAll(e=>e.Id.Equals(idUe));
             if (trouve !=null) throw new DuplicateUeDansParcoursException(idUe+" est déjà présente dans le parcours : "+idParcours);   
         }
     }
