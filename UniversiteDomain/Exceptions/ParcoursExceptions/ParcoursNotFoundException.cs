@@ -1,4 +1,4 @@
-namespace UniversiteDomain.Exceptions.ParcourExceptions;
+namespace UniversiteDomain.Exceptions.ParcoursExceptions;
 
 public class ParcoursNotFoundException : Exception
 {
