@@ -3,6 +3,7 @@ using Moq;
 using UniversiteDomain.DataAdapters;
 using UniversiteDomain.Entities;
 using UniversiteDomain.UseCases.EtudiantUseCases.Create;
+using UniversiteDomain.UseCases.ParcourUseCases;
 
 namespace UniversiteDomainUnitTests;
 
@@ -59,5 +60,4 @@ public class EtudiantUnitTest
         Assert.That(etudiantTeste.Prenom, Is.EqualTo(etudiantCree.Prenom));
         Assert.That(etudiantTeste.Email, Is.EqualTo(etudiantCree.Email));
     }
-
 }
